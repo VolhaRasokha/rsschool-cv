@@ -1,5 +1,4 @@
 .header {
-    background-color: white;
     padding: 0 0 12px 0;
     margin: 0 0 12px 0;
     border-bottom: 1px solid #999;
@@ -15,9 +14,28 @@
     margin: 0 0 12px 0;
 }
 
+body {
+    background: url(images/background.jpg);
+    width: 1200px; 
+    margin: 40px auto 60px;
+}
+
 .footer {
-    background-color: #999;
-    padding: 0 0 12px 0;
-    margin: 0 0 12px 0;
+    padding: 10px 0 10px 0;
+    margin: 10px 0 10px 0;
     text-align: center;
+}
+
+.test {
+    width: 180px;
+    font-style: italic; 
+    font-weight: bold; 
+    font-size: 18px; 
+    border-right: 1px solid #000000;
+}
+
+td {
+    padding: 0 10px 20px 10px;
+    margin: 0 10px 20px 10px;
+    vertical-align: text-top;
 }
