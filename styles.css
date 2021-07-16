@@ -1,41 +1,53 @@
+body {
+    font: 14px Verdana, sans-serif; line-height: 20px;
+    background: url(images/background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 60%; 
+    margin: 0 auto;
+}
+
 .header {
-    padding: 0 0 12px 0;
-    margin: 0 0 12px 0;
-    border-bottom: 1px solid #999;
+    padding: 0;
+    margin: 0;
+    border-bottom: 1px solid #000000;
 }
 
 #profile_photo {
-    float: right; 
+    float: right;
+    transform: rotateZ(5deg);
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5); 
+    margin: 1%;
 }
 
 .contacts {
+    padding: 0 0 0 0;
+    margin: 0 0 0 0;
+}
+
+.introduction {
     font-style: italic;
-    padding: 0 0 12px 0;
-    margin: 0 0 12px 0;
-}
-
-body {
-    background: url(images/background.jpg);
-    width: 1200px; 
-    margin: 40px auto 60px;
-}
-
-.footer {
-    padding: 10px 0 10px 0;
-    margin: 10px 0 10px 0;
-    text-align: center;
-}
-
-.test {
-    width: 180px;
-    font-style: italic; 
-    font-weight: bold; 
-    font-size: 18px; 
-    border-right: 1px solid #000000;
+    color: rgb(79, 76, 76);
+    padding: 1% 0 1% 0;
+    margin: 1% 0 1% 0;
 }
 
 td {
-    padding: 0 10px 20px 10px;
-    margin: 0 10px 20px 10px;
+    padding: 0 1% 2% 1%;
+    margin: 0 1% 2% 1%;
     vertical-align: text-top;
+}
+
+.definition_column {
+    width: 25%;
+    font-style: italic; 
+    font-weight: bold; 
+    font-size: 1.5em; 
+    border-right: 1px solid #000000;
+}
+
+.footer {
+    padding: 2% 0 0.5% 0;
+    margin: 2% 0 0.5% 0;
+    text-align: center;
 }
