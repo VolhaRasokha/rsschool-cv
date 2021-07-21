@@ -1,8 +1,7 @@
-# Volh Rasokha
+# Volha Rasokha
 
 ![Profile image](https://avatars.githubusercontent.com/u/37101551?s=100&v=4) 
 - *The Republic of Belarus, 220000, Minsk, Prgevalskogo str. 2*
-- ***Mob:** 	(+375 44) 586-20-88*
 - ***E-mail:** rassoha.olga@tut.by*
 - ***Skype:** olga.rassoha87*
 
