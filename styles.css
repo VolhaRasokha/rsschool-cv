@@ -3,7 +3,7 @@ body {
     background: url(images/background.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    width: 60%; 
+    width: 60%;
     margin: 0 auto;
 }
 
@@ -16,7 +16,7 @@ body {
 #profile_photo {
     float: right;
     transform: rotateZ(5deg);
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5); 
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
     margin: 1%;
 }
 
@@ -40,9 +40,9 @@ td {
 
 .definition_column {
     width: 25%;
-    font-style: italic; 
-    font-weight: bold; 
-    font-size: 1.5em; 
+    font-style: italic;
+    font-weight: bold;
+    font-size: 1.5em;
     border-right: 1px solid #000000;
 }
 
