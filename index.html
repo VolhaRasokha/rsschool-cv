@@ -2,90 +2,124 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href='https://yastatic.net/highlightjs/8.2/styles/rainbow.min.css' rel='stylesheet'/>
     <title>CV - Volha Rasokha</title>
 </head>
 <body>
     <link rel="stylesheet" href="styles.css">
-    <header class="header">
-        <img src="images/profile_photo.png" alt="Profile photo" id="profile_photo">
+    <header>
         <h1>Volha Rasokha</h1>
+        <div class="navigation-header">
+            <input id="menu-toggle" type="checkbox" />
+            <label class="menu-btn" for="menu-toggle">
+                <span></span>
+            </label>
+            <nav class="nav">
+                <ul class="menu-box">
+                    <li><a class="menu-item" href="#summary">Summary</a></li>
+                    <li><a class="menu-item" href="#experience">Experience</a></li>
+                    <li><a class="menu-item" href="#skills">Skills</a></li>
+                    <li><a class="menu-item" href="#education">Education</a></li>
+                    <li><a class="menu-item" href="#languages">Languages</a></li>
+                    <li><a class="menu-item" href="#contacts">Contacts</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
     <main>
-        <div class = "contacts">
-            <br>The Republic of Belarus, 220000, Minsk, Prgevalskogo str. 2
-            <br>E-mail: rassoha.olga@tut.by
-            <br>Skype: olga.rassoha87
+        <div class="right-column">
+            <img src="images/profile_photo.png" alt="Profile photo" id="profile_photo">
+            <section id="contacts">
+                <h2>Contacts</h2>
+                <ul>
+                    <li>Belarus, Minsk - 220000</li>
+                    <li>E-mail: rassoha.olga@tut.by</li>
+                    <li>Skype: olga.rassoha87</li>
+                </ul>
+            </section>
+            <section id="skills">
+                <h2>Skills</h2>
+                <ul>
+                    <li>RUP, Scrum</li>
+                    <li>Manual testing of web-applications</li>
+                    <li>Root cause analysis of production issues</li>
+                    <li>Creation simple SQL queries</li>
+                    <li>Automated Testing (Gherkin, Vividus, Karate)</li>
+                </ul>
+            </section>
+            <section id="education">
+                <h2>Education</h2>
+                <div>
+                    <p>09/2009 – 06/2015 Belarusian State University of Informatics and Radio electronics Extramural faculty, Engineer of Telecommunication Systems</p>
+                    <p>FTM, Automated Testing Mentoring Program #5 (2018Q2)</p>
+                    <p>Java Basics #24</p>
+                </div>
+            </section>
+            <section id="languages">
+                <h2>Foreign languages</h2>
+                <div><strong>English (B2):</strong> able to read technical literature; carry on business correspondence, understand content of audio and video materials according to the level, able to clarify details with colleagues in English</div>    
+            </section>
         </div>
-        <div class="introduction">
-            I have huge experience in testing in EPAM (for 7+ years) on big and challenging projects.
-            I was responsible for several important initiatives as a Lead of initiative. It was challenging initiatives - many new tools were needed to learn such as COSMOS DB, ArgoCd, Kafka, for some topics we didn’t have real apps for testing, so we set up required request and response in Wire Mock to emulate work of 3rd party systems, also we have a lot of communication with teams from Downstream systems and integration testing with them.
-            I have high level of technical skills, especially in automated Testing Tools and Frameworks. I run/analyze results/write automated tests in Soap UI, Vividus, writing BDD test cases in Gherkin and Karate.
-            I also have experience in support team where we investigated incoming issues. Sometimes the issues had Blocker and Critical priority, they were required fast analysis and response, so I have experience working under pressure of time.
-            I participated in SFT Lab as a mentor, it indicates that I am always ready to share my knowledge.
+        <div class="left-column">
+            <section id="summary">
+                <h3>Summary</h3>
+                <article>
+                    <h5>About me</h5>
+                    <p>I've been working for EPAM for 5+ years on big and challenging projects as software testing engineer.</p>
+                    <p>I have high level of technical skills, especially in automated Testing Tools and Frameworks. I run/analyze results/write automated tests in Soap UI, Vividus, writing BDD test cases in Gherkin and Karate.</p>
+                    <p>I also have experience in support team where we investigated incoming issues.</p>
+                    <p>I participated in SFT Lab as a mentor - I am always ready to share my knowledge.</p>
+                </article>
+            </section>
+            <section id="experience">
+                <h3>Work Experience</h3>
+                <div>
+                    <p>05/2014 – Till now–Software Testing Engineer, EPAM Systems, Belarus, Minsk</p>
+                    <p>Long-term project, ongoing engagement with the client resulting in creation of new and evolution of existing applications for web shop.</p>
+
+                    <p>Responsibilities:</p>
+
+                    <p>
+                        Leading new Initiatives on the project (It includes full communication, testing, reporting, email correspondence, raising callouts and handling external requests).
+                        AT sanity execution on Production during releases.
+                        Automation of test cases, execution, maintenance of existing auto tests.
+                    </p>
+                </div>
+            </section>
+            <section id="code-example">
+                <h3>Example of code</h3>
+                <pre><code>
+                    export default function createDreamTeam(members) {
+                        if(!Array.isArray(members)) return false;
+                        let result = '';
+                        for(let i = 0; i &lt; members.length; i++){
+                          if(typeof members[i] === "string"){
+                            result += members[i].trim().slice(0,1).toUpperCase();
+                          }
+                        }
+                        return Array.from(result).sort().join('');
+                      }
+                </code></pre>
+            </section>
+            <section id="projects-example">
+                <h3>Projects examples</h3>
+                <div class="projects-list">
+                    <div class="project">
+                        <h5>Vertical Slider</h5>
+                        <a href="https://rolling-scopes-school.github.io/volharasokha-JSFEPRESCHOOL/vertical-slider/" target="_blank"><img src="images/vertical-slider.png" alt="vertical-slider"></a>
+                        <p>Infinitive vertical slider</p>
+                        <p><strong>Technologies used:</strong> HTML, CSS, JavaScript</p>
+                    </div>
+                    <div class="project">
+                        <h5>Whack-a-penguin</h5>
+                        <a href="https://rolling-scopes-school.github.io/volharasokha-JSFEPRESCHOOL/whack-a-mole/" target="_blank"><img src="images/whack-penguin.png" alt="whack-penguin"></a>
+                        <p>Whack-a-penguin is a reaction speed game in which you have to click on targets and earn points</p>
+                        <p><strong>Technologies used:</strong> HTML, CSS, JavaScript</p>
+                    </div>
+                </div>
+            </section>
         </div>
-        <table>
-            <tbody>
-                <tr>
-                    <td class="definition_column">Career path</td>
-                    <td>
-                        <strong>05/2014 – Till now–Software Testing Engineer, EPAM Systems, Belarus, Minsk</strong>
-
-                        <h4>Projects:</h4>
-
-                        <h5>EPAM – SupplyOn (05/2014 – 04/2019)</h5>
-
-                        <p>SupplyOn offers its customers unique and customizable tools to support and optimize processes for efficient collaboration with partners and suppliers in a global network. Software solutions help companies optimize procurement, ensure top-quality purchased parts, improve logistics and seamlessly integrate financial processes.</p>
-
-                        <p><strong>Responsibilities:</strong></p>
-                            <ul>
-                                <li>Elaboration and test cases writing for support requests, verification of support requests.</li>
-                                <li>Initial review of incoming issues from Production.</li>
-                                <li>Review results of automation tests.</li>
-                                <li>Creation and performing simple SQL queries.</li>
-                                <li>Test result report writing, Test result report review, Project report writing.</li>
-                                <li>Production bug analysis. Knowledge transfer from SAM to Release team.</li>
-                            </ul>
-
-                        <h5>EPAM – Sephora USA, Retail &amp; Distribution (04/2019 – Till now)</h5>
-                        <p>Long-term ongoing engagement with the client resulting in creation of new and evolution of existing Sephora applications.</p>
-                        <p><strong>Responsibilities:</strong></p>
-                            <ul>
-                                <li>Leading new Initiatives on the project (It includes full communication, testing, reporting, email correspondence, raising callouts and handling external requests).</li>
-                                <li>AT sanity execution on Production during releases.</li>
-                                <li>Automation of test cases, execution, maintenance of existing auto tests.</li>
-                            </ul>
-                    </td>
-                </tr>
-                <tr>
-                    <td class="definition_column">Tools</td>
-                    <td>SQL Developer, SoapUI, WinSCP, PuTTY, Hermes, Postman, WireMock, Git, Eclipse, IntelliJ IDEA, Jenkins, Jira, Confluence, TestRail</td>
-                </tr>
-                <tr>
-                    <td class="definition_column">Education</td>
-                    <td>
-                        <ul>
-                            <li>09/2009 – 06/2015 Belarusian State University of Informatics and Radio electronics
-                                Extramural faculty, Engineer of Telecommunication Systems</li>
-                            <li>09/2005 – 06/2008 The Highest State college of Telecommunication,
-                                Technician of Telecommunication Systems</li>
-                        </ul>
-                    </td>
-                </tr>
-                <tr>
-                    <td class="definition_column">Educational programs</td>
-                    <td>
-                        <ul>
-                            <li>FTM, Automated Testing Mentoring Program #5 (2018Q2) - <a href="https://github.com/VolhaRasokha/ATMMODULE13/tree/master/module13">Example of the task performed during the Mentoring Program</a></li>
-                            <li>Java Basics #24 - <a href="https://github.com/VolhaRasokha/JB24_Lesson12_HW/tree/master/src">Example the task performed during the course</a></li>
-                        </ul>
-                    </td>
-                </tr>
-                <tr>
-                    <td class="definition_column">Foreign languages</td>
-                    <td><strong>English (B2):</strong>able to read technical literature; carry on business correspondence, understand content of audio and video materials according to the level, able to clarify details with colleagues in English</td>
-                </tr>
-            </tbody>
-        </table>
     </main>
     <footer>
         <div class="footer">
@@ -96,5 +130,7 @@
             </a>
         </div>
     </footer>
+    <script src='https://yastatic.net/highlightjs/8.2/highlight.min.js'></script>
+    <script>hljs.initHighlightingOnLoad();</script>
 </body>
 </html>
