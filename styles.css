@@ -4,7 +4,7 @@ html {
 
 body {
     font-family: 'Open Sans', sans-serif;
-    width: 100%; 
+    width: 100%;
     margin: 0 auto;
 
     margin: 0px;
@@ -15,7 +15,6 @@ header {
     width: 100%;
     padding: 0px;
     margin: 0px;
-    
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -46,7 +45,7 @@ h1 {
 
     list-style: none;
   }
-  
+
 a {
     text-decoration: none;
     color: whitesmoke;
@@ -81,7 +80,6 @@ main {
     width: 75%;
     margin: 5% 5%;
     padding: 0 10%;
- 
     border-radius: 50%;
 }
 
@@ -100,7 +98,6 @@ h2 {
 #summary, #experience, #code-example, #projects-example {
     margin: 5%;
     padding: 0;
-    
 }
 
 h3 {
@@ -193,10 +190,10 @@ h5 {
         cursor: pointer;
         z-index: 1;
     }
-       
-      .menu-btn > span,
-      .menu-btn > span::before,
-      .menu-btn > span::after {
+
+    .menu-btn > span,
+    .menu-btn > span::before,
+    .menu-btn > span::after {
         display: block;
         position: absolute;
         width: 100%;
@@ -204,16 +201,16 @@ h5 {
         background-color: #616161;
         transition-duration: .25s;
       }
-      .menu-btn > span::before {
+    .menu-btn > span::before {
         content: '';
         top: -8px;
       }
-      .menu-btn > span::after {
+    .menu-btn > span::after {
         content: '';
         top: 8px;
       }
-       
-      .navigation-header ul {
+
+    .navigation-header ul {
         visibility: hidden;
         font-size: 50%;
         display: block;
@@ -230,9 +227,9 @@ h5 {
         box-shadow: 2px 0px 6px rgba(0, 0, 0, .2);
         transition-duration: .25s;
 
-      }
+    }
 
-      .navigation-header li {
+    .navigation-header li {
         background-color: #bdb9b96d;
         font-size: 175%;
         line-height: 100%;
@@ -244,7 +241,7 @@ h5 {
       #menu-toggle{
         opacity: 0;
       }
-       
+
       #menu-toggle:checked ~ .menu-btn > span{
         transform: rotate(45deg);
       }
