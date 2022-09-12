@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>CV - Volha Rasokha</title>
+</head>
+<body>
+    <header>
+        <h1>Volha Rasokha</h1>
+        <div class="navigation-header">
+            <label class="menu-btn" for="menu-toggle">
+                <span></span>
+            </label>
+            <nav class="nav">
+                <ul class="menu-box">
+                    <li><a class="menu-item" href="#summary">Summary</a></li>
+                    <li><a class="menu-item" href="#experience">Experience</a></li>
+                    <li><a class="menu-item" href="#skills">Skills</a></li>
+                    <li><a class="menu-item" href="#education">Education</a></li>
+                    <li><a class="menu-item" href="#languages">Languages</a></li>
+                    <li><a class="menu-item" href="#contacts">Contacts</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <div class="right-column">
+            <img src="images/profile_photo.png" alt="Profile photo" id="profile_photo">
+            <section id="contacts">
+                <h2>Contacts</h2>
+                <ul>
+                    <li>Belarus, Minsk - 220000</li>
+                    <li>E-mail: rassoha.olga@tut.by</li>
+                    <li>Skype: olga.rassoha87</li>
+                </ul>
+            </section>
+            <section id="skills">
+                <h2>Skills</h2>
+                <ul>
+                    <li>RUP, Scrum</li>
+                    <li>Manual testing of web-applications</li>
+                    <li>Root cause analysis of production issues</li>
+                    <li>Creation simple SQL queries</li>
+                    <li>Automated Testing (Gherkin, Vividus, Karate)</li>
+                </ul>
+            </section>
+            <section id="education">
+                <h2>Education</h2>
+                <div>
+                    <p>09/2009 – 06/2015 Belarusian State University of Informatics and Radio electronics Extramural faculty, Engineer of Telecommunication Systems</p>
+                    <p>FTM, Automated Testing Mentoring Program #5 (2018Q2)</p>
+                    <p>Java Basics #24</p>
+                </div>
+            </section>
+            <section id="languages">
+                <h2>Foreign languages</h2>
+                <div><strong>English (B2):</strong> able to read technical literature; carry on business correspondence, understand content of audio and video materials according to the level, able to clarify details with colleagues in English</div>
+            </section>
+        </div>
+        <div class="left-column">
+            <section id="summary">
+                <h3>Summary</h3>
+                <article>
+                    <h5>About me</h5>
+                    <p>I've been working for EPAM for 5+ years on big and challenging projects as software testing engineer.</p>
+                    <p>I have high level of technical skills, especially in automated Testing Tools and Frameworks. I run/analyze results/write automated tests in Soap UI, Vividus, writing BDD test cases in Gherkin and Karate.</p>
+                    <p>I also have experience in support team where we investigated incoming issues.</p>
+                    <p>I participated in SFT Lab as a mentor - I am always ready to share my knowledge.</p>
+                </article>
+            </section>
+            <section id="experience">
+                <h3>Work Experience</h3>
+                <div>
+                    <p>05/2014 – Till now–Software Testing Engineer, EPAM Systems, Belarus, Minsk</p>
+                    <p>Long-term project, ongoing engagement with the client resulting in creation of new and evolution of existing applications for web shop.</p>
+                    <p>Responsibilities:</p>
+                    <p>
+                        Leading new Initiatives on the project (It includes full communication, testing, reporting, email correspondence, raising callouts and handling external requests).
+                        AT sanity execution on Production during releases.
+                        Automation of test cases, execution, maintenance of existing auto tests.
+                    </p>
+                </div>
+            </section>
+            <section id="code-example">
+                <h3>Example of code</h3>
+                <pre><code>
+                    export default function createDreamTeam(members) {
+                        if(!Array.isArray(members)) return false;
+                        let result = '';
+                        for(let i = 0; i &lt; members.length; i++){
+                          if(typeof members[i] === "string"){
+                            result += members[i].trim().slice(0,1).toUpperCase();
+                          }
+                        }
+                        return Array.from(result).sort().join('');
+                      }
+                </code></pre>
+            </section>
+            <section id="projects-example">
+                <h3>Projects examples</h3>
+                <div class="projects-list">
+                    <div class="project">
+                        <h5>Vertical Slider</h5>
+                        <a href="https://rolling-scopes-school.github.io/volharasokha-JSFEPRESCHOOL/vertical-slider/" target="_blank"><img src="images/vertical-slider.png" alt="vertical-slider"></a>
+                        <p>Infinitive vertical slider</p>
+                        <p><strong>Technologies used:</strong> HTML, CSS, JavaScript</p>
+                    </div>
+                    <div class="project">
+                        <h5>Whack-a-penguin</h5>
+                        <a href="https://rolling-scopes-school.github.io/volharasokha-JSFEPRESCHOOL/whack-a-mole/" target="_blank"><img src="images/whack-penguin.png" alt="whack-penguin"></a>
+                        <p>Whack-a-penguin is a reaction speed game in which you have to click on targets and earn points</p>
+                        <p><strong>Technologies used:</strong> HTML, CSS, JavaScript</p>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+    <footer>
+        <div class="footer">
+            2022
+            <a href="https://github.com/VolhaRasokha">GitHub</a>
+            <a href="https://rs.school/js/">
+                <img src="images/rs_school_js.svg" alt="RS Logo" width="50" height="20">
+            </a>
+        </div>
+    </footer>
+</body>
+</html>
